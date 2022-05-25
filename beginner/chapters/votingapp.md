@@ -54,6 +54,8 @@ services:
     image: postgres:9.4
     volumes:
       - db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
     networks:
       - backend
     deploy:
