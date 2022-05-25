@@ -55,7 +55,8 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
     networks:
       - backend
     deploy:
